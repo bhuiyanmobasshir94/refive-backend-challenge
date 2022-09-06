@@ -12,7 +12,7 @@ class ReceiptListCreateAPIView(generics.ListCreateAPIView):
     queryset = Receipt.objects.all()
     serializer_class = ReceiptSerializer
     permission_classes = [
-        permissions.AllowAny,
+        permissions.IsAuthenticated,
     ]
     filter_backends = (DjangoFilterBackend, SearchFilter, OrderingFilter)
     search_fields = ["receipt__name"]
@@ -33,7 +33,7 @@ class ReceiptRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView)
     queryset = Receipt.objects.all()
     serializer_class = ReceiptSerializer
     permission_classes = [
-        permissions.AllowAny,
+        permissions.IsAuthenticated,
     ]
     filter_backends = (DjangoFilterBackend, SearchFilter, OrderingFilter)
     search_fields = ["receipt__name"]
