@@ -1,0 +1,43 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "docker-compose-up",
+            "command": "docker-compose up -d --remove-orphans",
+            "problemMatcher": [],
+        },
+        {
+            "type": "shell",
+            "label": "docker-compose-down",
+            "command": "docker-compose down",
+            "problemMatcher": [],
+        },
+        {
+            "type": "shell",
+            "label": "manage.py:makemigrations",
+            "command": "poetry run python manage.py makemigrations ${input:app-name}",
+            "problemMatcher": [],
+        },
+        {
+            "type": "shell",
+            "label": "manage.py:migrate",
+            "command": "poetry run python manage.py migrate ${input:app-name}",
+            "problemMatcher": [],
+        },
+        {
+            "type": "shell",
+            "label": "manage.py:shell",
+            "command": "poetry run python manage.py shell",
+            "problemMatcher": [],
+        },
+    ],
+    "inputs": [
+        {
+            "id": "app-name",
+            "description": "App Name:",
+            "default": "",
+            "type": "promptString"
+        },
+    ],
+}
