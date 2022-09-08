@@ -20,7 +20,7 @@ from django.urls import include, path
 
 api_urlpatterns = [
     path("receipt/", include("refive.receipt.api.urls")),
-    path("custom_auth/", include("refive.custom_auth.api.urls"))
+    path("custom_auth/", include("refive.custom_auth.api.urls")),
 ]
 
 
