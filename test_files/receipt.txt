@@ -1,0 +1,41 @@
+               Bakery
+            Company GbR
+        Oranienburger Straße 120
+            10119 Berlin
+
+
+
+Bill no.3-7721         11:29:51 20.04.2021
+
+------------------------------------------
+1x Cappuccino          2,70€    2,70€  A
+
+                                  --------
+
+Total          2,70€
+
+Given (iZettle)                     2,7€
+
+
+------------------------------------------
+USt.%     gross      net              USt.
+A=7%      2,70€     2,52€            0,18€
+
+
+
+             Table: Counter
+          Terminal: Terminal 1
+TSE-Transaktion     1831
+TSE-Signatur-Nr.    98009
+TSE-Start           2020-04-21T09:29:38.00000Z
+TSE-Stop            2020-04-21T09:29:50.00000Z
+TSE-Seriennummer    5f2897cc074ae841330658eadd324661159f53b7ffd29215
+TSE-Zeitformat      utcTime
+TSE-Signatur        bXkPffFOcetbFokYrOqr/7EYrAc0PH6r
+TSE-Hashalgorithmus ecdsa-plain-SHA256
+TSE Status          In evaluation
+
+
+
+
+         Ust-Id: DE11111111
